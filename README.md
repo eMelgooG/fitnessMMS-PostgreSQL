@@ -5,3 +5,5 @@
   Finally, multi club members are awarded membership points for joining the club. Upon sign up, they will be awarded 100 points which they can use to redeem gifts and drinks from the store. Our program will not handle the redemption process. We're only gonna add 100 points to the multi club member account.</br>
   This application uses a csv file to store information about each member. Whenever we launch the application, we will read the the information from the csv file and store the members in a LinkedList. When we add a member to the LinkedList or remove it we will also update the csv file.</br>
   Le the rumble begin! 
+
+Observation: It's awesome. I'm starting to enjoy OOP programming and the way it structures everything.
