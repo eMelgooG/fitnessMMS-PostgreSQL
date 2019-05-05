@@ -4,13 +4,12 @@ package fitnessmms;
 public class Member {
     private String name;
     private int id;
-    private int club;
     private double fees;
-    Member(String name, int id, double fees, int club) {
+    Member(String name, int id, double fees) {
         this.name = name;
         this.id = id;
         this. fees = fees;
-        this.club = club;
+      
     }
     
     public void setName (String name) {
@@ -34,15 +33,9 @@ public class Member {
         return this.fees;
     }
     
-    public void setClub(int club) {
-        this.club = club;
-    }
-    public int getClub () {
-        return this.club;
-    }
     
     public String toString() {
-        return this.name + ", " + this.id + ", " + this.fees + ", " + this.club;
+        return this.name + ", " + this.id + ", " + this.fees;
     }
     
 }

@@ -20,7 +20,7 @@ public class FileHandler {
                     mbr = new SingleClubMember (splitline[1], Integer.parseInt(splitline[2]), Double.parseDouble(splitline[3]), Integer.parseInt(splitline[4]));
                     m.add(mbr);
                 } else {
-                     mbr = new MultiClubMember (splitline[1], Integer.parseInt(splitline[2]), Double.parseDouble(splitline[3]), Integer.parseInt(splitline[4]), Integer.parseInt(splitline[5]));
+                     mbr = new MultiClubMember (splitline[1], Integer.parseInt(splitline[2]), Double.parseDouble(splitline[3]), Integer.parseInt(splitline[4]));
                     m.add(mbr);
                 }
                 line = reader.readLine();

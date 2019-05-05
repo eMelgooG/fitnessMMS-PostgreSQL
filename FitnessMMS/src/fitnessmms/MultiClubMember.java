@@ -5,11 +5,11 @@ public class MultiClubMember extends Member {
     private int membershipPoints = 100;
     private final char type = 'm';
     
-   public MultiClubMember (String name, int id, double fees, int club){
-       super(name,id,fees,club);
+   public MultiClubMember (String name, int id, double fees){
+       super(name,id,fees);
    }
-   public MultiClubMember (String name, int id, double fees, int club, int mmPoints){
-       super(name,id,fees,club);
+   public MultiClubMember (String name, int id, double fees, int mmPoints){
+       super(name,id,fees);
        this.membershipPoints = mmPoints;     
     }
     
