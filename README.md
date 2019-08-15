@@ -6,4 +6,4 @@
   This application uses a csv file to store information about each member. Whenever we launch the application, we will read the the information from the csv file and store the members in a LinkedList. When we add a member to the LinkedList or remove it we will also update the csv file.</br>
   Le the rumble begin! 
 
-Observation: It's awesome. I'm starting to enjoy OOP programming and the way it structures everything.
+Observation: It's awesome. I'm starting to enjoy OOP and the way it structures everything.
