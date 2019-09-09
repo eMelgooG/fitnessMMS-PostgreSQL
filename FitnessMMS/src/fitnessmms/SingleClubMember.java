@@ -4,18 +4,23 @@ package fitnessmms;
 
 public class SingleClubMember extends Member {
     
-    private final char type = 's';
-    private int club;
+    public static final char type = 's';
     
-    SingleClubMember(String name, int id, double fees, int club) {
-        super(name,id,fees);
-        this.club = club;
+    SingleClubMember(String name, double fees,int id, int mempoints) {
+        super(name,fees,id,mempoints);
+    }
+    
+    SingleClubMember(String name,double fees) {
+        super(name,fees);
+    }
+    public char getType(){
+        return type;
     }
 
     
     @Override
     public String toString() {
-        return this.type + ", " + super.toString() + ", " + this.club;
+        return super.toString();
     }
     
 }

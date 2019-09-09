@@ -5,11 +5,27 @@ public class Member {
     private String name;
     private int id;
     private double fees;
-    Member(String name, int id, double fees) {
+    private int memPoints;
+    Member(String name,double fees,int id,int mempoints) {
         this.name = name;
         this.id = id;
-        this. fees = fees;
+        this.fees = fees;
+        this.memPoints = mempoints;
       
+    }
+    
+      Member(String name,double fees) {
+        this.name = name;
+        this.fees = fees;
+      
+    }
+    
+    
+    public void setMemPoints (int memPoints) {
+            this.memPoints = memPoints;
+    }
+    public int getMemPoints () {
+        return this.memPoints;
     }
     
     public void setName (String name) {
@@ -35,7 +51,7 @@ public class Member {
     
     
     public String toString() {
-        return this.name + ", " + this.id + ", " + this.fees;
+        return this.name + ", " + this.id + ", " + this.fees + ", " + this.memPoints;
     }
     
 }
