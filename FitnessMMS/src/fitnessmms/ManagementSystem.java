@@ -37,7 +37,8 @@ public class ManagementSystem {
         System.out.println("=====================================");
         System.out.println("1)Add Member");
         System.out.println("2)Remove Member");
-        System.out.println("3)Display Member Information\n");
+        System.out.println("3)Update membership points");
+        System.out.println("4)Display Member Information\n");
         System.out.print("Please select an option: (Or enter -1 to exit): ");
         choice = getIntInput();
         return choice;
@@ -111,6 +112,28 @@ public class ManagementSystem {
         return -1;
     }
     
+    public int[] updateMmPoints(LinkedList<Member> m){
+        int[] data = new int[2];
+         System.out.print("Please enter the member id: ");
+        data[0] = getIntInput();
+            for (int i = 0 ; i < m.size() ; i++) {
+            if (data[0] == m.get(i).getID()) {
+                System.out.println("Member name: " + m.get(i).getName());
+                System.out.println("Membership points: " + m.get(i).getMemPoints() + "\n");
+                System.out.print("How many points would you like to add: ");
+                 int points = getIntInput();
+                 m.get(i).addMmPoints(points);
+                 data[1] = m.get(i).getMemPoints();
+                 System.out.println("\n===Membership points updated!===\nYou now have " + data[1] + " points.\n");
+                 return data;
+            }             
+            }
+            System.out.println("\n\t\tMEMBER ID not found!\n");
+            data[0] = -1;
+            return data;
+            }
+    
+    
     public void displayMemInfo(LinkedList<Member> m) {
         int memberID;
         System.out.print("Please enter a member id: ");
@@ -130,6 +153,7 @@ public class ManagementSystem {
         System.out.println("\n\t\tMEMBER ID not found!\n");
     }
     }
+
     
     
 

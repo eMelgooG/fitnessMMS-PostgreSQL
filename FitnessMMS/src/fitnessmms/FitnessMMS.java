@@ -24,7 +24,12 @@ public class FitnessMMS {
                        if (rid!=-1)                   // we remove the entry in DB only if there's and ID match
                       db.removeDbEntry(rid);
                       break;
-              case 3: ms.displayMemInfo(m);              //display member information
+                      
+              case 3: int[] pid = ms.updateMmPoints(m);
+                      if(pid[0]!=-1)
+                      db.updateDbPoints(pid[0],pid[1]);
+                      break;
+              case 4: ms.displayMemInfo(m);              //display member information
                       break;
                        
               default: System.out.println("Invalid option!\n");

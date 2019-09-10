@@ -21,8 +21,8 @@ public class Member {
     }
     
     
-    public void setMemPoints (int memPoints) {
-            this.memPoints = memPoints;
+    public void addMmPoints (int memPoints) {
+            this.memPoints += memPoints;
     }
     public int getMemPoints () {
         return this.memPoints;

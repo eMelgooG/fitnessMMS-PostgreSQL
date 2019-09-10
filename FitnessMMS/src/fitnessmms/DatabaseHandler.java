@@ -91,4 +91,17 @@ public class DatabaseHandler {
  
         }
         
+        public void updateDbPoints(int id, int points) {
+            String SQL = "UPDATE members " + "SET mempoints = ? " + "WHERE member_id = ?";
+            
+            try (Connection conn = connect(); 
+                    PreparedStatement pstmt = conn.prepareStatement(SQL)) {
+                pstmt.setInt(1,points);
+                pstmt.setInt(2, id);
+                pstmt.executeUpdate();
+            } catch (SQLException ex)
+            { System.out.println(ex.getMessage());          
+            }
+        }
+        
 }
