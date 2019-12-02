@@ -1,4 +1,4 @@
-# Fitness Management System (PostegreSQL)
+# Fitness Management System (PostegrSQL)
 This is a basic membership management system for a fitness centre. It's a reproduction of the original project, just that now we use the JDBC API and PostgreSQL to manage data.
 
 
